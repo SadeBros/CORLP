@@ -1,7 +1,7 @@
 ### Purpose
 This repository is about implementation and improvement of the paper **A link prediction approach for item recommendation with complex numbers**
 
-#### Here is BibTeX of Article 
+#### Here is BibTeX of the paper 
 `
 @article{xie2015link,
   title={A link prediction approach for item recommendation with complex number},
@@ -18,8 +18,12 @@ In the paper, recommendation problem is converted into a link prediction problem
 
 After describing the relations, they created **adjancecy matrix A** in Figure 1. Then, they took the nth power (3,5,7,9) of A. Powered matrix contains the estimations. N (10, 20 ... 100) item which is not rated before the users is recommended to each user. Finally, they calculated the hits rate and coverage. 
 
-<figure style="text-align: center;"><img src='./images/adjacency_matrix_A.png'><figcaption>Figure 1. Adjacency Matrix A</figcaption></figure>
-     
+<p align="center">
+  <img src="./images/adjacency_matrix_A.png">
+  <br>
+  Figure 1. Adjacency Matrix A
+</p>
+
 As written in the paper, A<sub>uu</sub> and A<sub>ii</sub> matrices are intentionally left zero. A<sub>ui</sub> represents ratings to like(j) or dislike(-j), depending on the rating is less than the threshold. A<sub>iu</sub> is equal to the transpose of A<sub>ui</sub> multiplied by -1.
 
 For further improvement of the paper, A<sub>uu</sub> and A<sub>ii</sub> matrices will be taken account of by finding **Latent Factors (pu and qi)** of A<sub>ui</sub>. Then, A<sub>uu</sub> and A<sub>ii</sub> is created by applying cosine similarity to pu and qi respectively. After re-creating the matrix A, nth power of A are taken, hits rate and coverage are calculated.
@@ -37,4 +41,10 @@ For further improvement of the paper, A<sub>uu</sub> and A<sub>ii</sub> matrices
 
 The implementation of CORLP method and further improvement of it are developed using Python programming language on Google Colab. 
 
-<figure style="text-align: center;"><img src='./images/table_of_libraries.png'><figcaption>Table 1. Libraries Used in Python</figcaption></figure>
+<p align="center">
+  <img src="./images/table_of_libraries.png">
+  <br>
+  Table 1. Libraries used in Python
+</p>
+
+
