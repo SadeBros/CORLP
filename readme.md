@@ -28,15 +28,11 @@ As written in the paper, A<sub>uu</sub> and A<sub>ii</sub> matrices are intentio
 
 For further improvement of the paper, A<sub>uu</sub> and A<sub>ii</sub> matrices will be taken account of by finding **Latent Factors (pu and qi)** of A<sub>ui</sub>. Then, A<sub>uu</sub> and A<sub>ii</sub> is created by applying cosine similarity to pu and qi respectively. After re-creating the matrix A, nth power of A are taken, hits rate and coverage are calculated.
 
-### About Dataset ( [MovieLens 100k](http://files.grouplens.org/datasets/movielens/ml-100k-README.txt) )
+### About Dataset ( [MovieLens 100k](http://files.grouplens.org/datasets/movielens/ml-100k-README.txt) | [Download](http://files.grouplens.org/datasets/movielens/ml-100k.zip) )
 
  MovieLens 100k dataset was collected during the seven-month period from September 19th, 1997 through April 22nd, 1998 by the GroupLens Research Project at the University of Minnesota. The dataset consists of 100,000 ratings from 943 users on 1682 movies. Those ratings are scaled 1-5. Furthermore, each user has rated at least 20 movies in the dataset.<br>
  
 **u.data**, is full dataset randomly ordered and tab separated list of user id, item id, rating and timestamp, is considered.  
-
- [Download MovieLens 100k](http://files.grouplens.org/datasets/movielens/ml-100k.zip)
-
-
 ### Method
 
 The implementation of CORLP method and further improvement of it are developed using Python programming language on Google Colab. 
