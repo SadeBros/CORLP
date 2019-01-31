@@ -33,7 +33,7 @@ For further improvement of the paper, A<sub>uu</sub> and A<sub>ii</sub> matrices
  MovieLens 100k dataset was collected during the seven-month period from September 19th, 1997 through April 22nd, 1998 by the GroupLens Research Project at the University of Minnesota. The dataset consists of 100,000 ratings from 943 users on 1682 movies. Those ratings are scaled 1-5. Furthermore, each user has rated at least 20 movies in the dataset.<br>
  
 **u.data**, is full dataset randomly ordered and tab separated list of user id, item id, rating and timestamp, is considered.  
-### Method
+### Requirements
 
 The implementation of CORLP method and further improvement of it are developed using Python programming language on Google Colab. 
 
@@ -43,4 +43,29 @@ The implementation of CORLP method and further improvement of it are developed u
   Table 1. Libraries used in Python
 </p>
 
+### (File Not Added Yet.) Method 
+Please, check **methodology.pdf** file.
+
+### Terminology
+
+**Latent Factor** is technique for matrix factorization. It is good for answer the "How to estimate missing rating?" question. With this technique, original matrix is divided by two matrices called **p<sub>u<sub>** and **q<sub>i<sub>**. Original matrix dimension is reduced and optimization, SGD (Stochastic Gradient Descent) process, can be done on it. So that, sparsity problem on the dataset is prevented.
+  
+**Hits rate** corresponds to ability to recommend relevant items to user.<br>
+**Coverage**  corresponds to the percentage of items the system can recommend.
+
+<p align="center">
+  <img src="./images/formulas_hitsrate_coverage.png">
+  <br>
+  Figure 2. Hits Rate and Formula
+</p>
+
+
+### (File Not Added Yet.) Comparison of Two Method 
+Three different tests are conducted.<br>
+**Test 1**: Adjacency Matrix is powered by 3, 5, 7, 9. <br>
+**Test 2**: Threshold value for converting complex number were changed to 3, 4, 5. In this case, only A<sup>3</sup> is considered.<br>
+**Test 3**: Effect of different threshold value for cosine similarity was tested. Threshold is changed 0 to 0.5.<br>
+
+Please, check **results.pdf** file for the test results.
+ 
 
