@@ -68,4 +68,8 @@ Three different tests are conducted.<br>
 
 Please, check **results.pdf** file for the test results.
  
-
+### Developers  :computer:
+- _Şafak Akıncı (@safak17)_<br />
+  _https://github.com/safak17_
+- _Ahmet Gökçe Bozan (@gkca)_<br />
+  _https://www.github.com/gkca_
