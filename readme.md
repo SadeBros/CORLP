@@ -1,18 +1,6 @@
 ### Purpose
-This repository is about implementation and improvement of the paper **A link prediction approach for item recommendation with complex numbers**
+This repository is about implementation and improvement of the paper **[A link prediction approach for item recommendation with complex numbers](https://www.sciencedirect.com/science/article/abs/pii/S0950705115000568)**.
 
-#### Here is BibTeX of the paper 
-`
-@article{xie2015link,
-  title={A link prediction approach for item recommendation with complex number},
-  author={Xie, Feng and Chen, Zhen and Shang, Jiaxing and Feng, Xiaoping and Li, Jun},
-  journal={Knowledge-Based Systems},
-  volume={81},
-  pages={148--158},
-  year={2015},
-  publisher={Elsevier}
-}
-`
 ### Abstract
 In the paper, recommendation problem is converted into a link prediction problem. They proposed a novel way for describing the relations "similar vs dissimilar and like vs. dislike" using complex numbers. This technique is called as **CORLP (Complex Representation-based Link Prediction)** and it is the technique which uses complex numbers to represent the like and dislike relations between users and items.
 
@@ -32,7 +20,7 @@ For further improvement of the paper, A<sub>uu</sub> and A<sub>ii</sub> matrices
 
  MovieLens 100k dataset was collected during the seven-month period from September 19th, 1997 through April 22nd, 1998 by the GroupLens Research Project at the University of Minnesota. The dataset consists of 100,000 ratings from 943 users on 1682 movies. Those ratings are scaled 1-5. Furthermore, each user has rated at least 20 movies in the dataset.<br>
  
-**u.data**, is full dataset randomly ordered and tab separated list of user id, item id, rating and timestamp, is considered.  
+**u.data**, is full dataset randomly ordered and tab separated list of user id, item id, rating and timestamp, is considered. Also, A<sub>ui</sub> is created using u.data. 
 ### Requirements
 
 The implementation of CORLP method and further improvement of it are developed using Python programming language on Google Colab. 
