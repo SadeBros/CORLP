@@ -2,7 +2,7 @@
 This repository is about implementation and improvement of the paper **[A link prediction approach for item recommendation with complex numbers](https://www.sciencedirect.com/science/article/abs/pii/S0950705115000568)**.
 
 ### Abstract
-In the paper, recommendation problem is converted into a link prediction problem. They proposed a novel way for describing the relations "similar vs dissimilar and like vs. dislike" using complex numbers. This technique is called as **CORLP (Complex Representation-based Link Prediction)** and it is the technique which uses complex numbers to represent the like and dislike relations between users and items.
+In the paper, recommendation problem is converted into a link prediction problem. They proposed a novel way for describing the relations "similar vs dissimilar and like vs. dislike" using complex numbers. This technique is called as **CORLP (Complex Representation-based Link Prediction)**, uses complex numbers to represent the like and dislike relations between users and items.
 
 After describing the relations, they created **adjacency matrix A** in Figure 1. Then, they took the nth power (3,5,7,9) of A. Powered matrix contains the estimations. N (10, 20 ... 100) item which is not rated before the users is recommended to each user. Finally, they calculated the hits rate and coverage. 
 
