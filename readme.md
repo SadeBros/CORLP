@@ -21,18 +21,6 @@ For further improvement of the paper, A<sub>uu</sub> and A<sub>ii</sub> matrices
  MovieLens 100k dataset was collected during the seven-month period from September 19th, 1997 through April 22nd, 1998 by the GroupLens Research Project at the University of Minnesota. The dataset consists of 100,000 ratings from 943 users on 1682 movies. Those ratings are scaled 1-5. Furthermore, each user has rated at least 20 movies in the dataset.<br>
  
 **u.data**, is full dataset randomly ordered and tab separated list of user id, item id, rating and timestamp, is considered. Also, A<sub>ui</sub> is created using u.data. 
-### Requirements
-
-The implementation of CORLP method and further improvement of it are developed using Python programming language on Google Colab. 
-
-<p align="center">
-  <img src="./images/table_of_libraries.png">
-  <br>
-  Table 1. Libraries used in Python
-</p>
-
-### (File Not Added Yet.) Method 
-Please, check **methodology.pdf** file.
 
 ### Terminology
 
@@ -47,6 +35,20 @@ Please, check **methodology.pdf** file.
   Figure 2. Hits Rate and Formula
 </p>
 
+### Requirements
+
+The implementation of CORLP method and further improvement of it are developed using Python programming language on Google Colab. 
+
+<p align="center">
+  <img src="./images/table_of_libraries.png">
+  <br>
+  Table 1. Libraries used in Python
+</p>
+
+### Methodology 
+| ![CORLP](./images/method_paper.png) | ![CORLP with Latent Factor](./images/method_latent.png)
+|:---:|:---:|
+| CORLP | CORLP with Latent Factor | 
 
 ### (File Not Added Yet.) Comparison of Two Method 
 Three different tests are conducted.<br>
